@@ -1,0 +1,1 @@
+a simple flask app that removes images backgrounds using the rembg library 😐
