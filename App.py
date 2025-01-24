@@ -1,10 +1,13 @@
-from flask import Flask, request, make_response, jsonify, send_file
+from flask import Flask, request, make_response, jsonify, send_file 
+from flask_cors import CORS
 import os
 from io import BytesIO
 from rembg import remove
 from PIL import Image
 
 app = Flask(__name__)
+
+CORS(app)
 
 @app.route('/', methods=['POST'])
 def main():
